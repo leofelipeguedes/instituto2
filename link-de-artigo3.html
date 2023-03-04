@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="BOLINHA BRANCA.png" type="image/png">
+</head>
+<body>
+    <nav>
+        <img src="BOLINHA BRANCA.png" alt="">
+        <ul>
+
+            <li class="dropdown">
+                <a href="index.html" class="botaodropdown">Home</a>
+                <div class="contemdropdown">
+                    <a href="oinstituto.html">O instituto</a>
+                    <a href="clinica.html">Clínica</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="" class="botaodropdown">Institucional</a>
+                <div class="contemdropdown">
+                    <a href="sobre.html">Sobre a Dr. Karoll Lohanne Monteiro</a>
+                    <a href="aclinica.html">A Clínica</a>
+                    <a href="contatos.html">Contatos</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="" class="botaodropdown">Tratamentos estéticos</a>
+                <div class="contemdropdown">
+                    <a href="trat_harm_facial.html">Harmonização facial</a>
+                    <a href="trat_toxina.html">Toxina botulínica</a>
+                    <a href="trat_bioestimulador.html">Biostimulador de colágeno</a>
+                    <a href="trat_skinbooster.html"><i>Skinbooster</i></a>
+                    <a href="trat_microagulhamento.html">Microagulhamento</a>
+                    <a href="trat_peeling.html"><i>peeling</i> químico</a>
+                    <a href="trat_capilar.html">Terapia capilar</a>
+                    <a href="trat_limpezadepele.html">Limpeza de pele</a>
+
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="" class="botaodropdown">Outros</a>
+                <div class="contemdropdown">
+                    <a onclick="avisar()">Massagem</a>
+                    <a onclick="avisar()">Podologia</a>
+                    <a onclick="avisar()">Pele</a>
+                    <a onclick="avisar()">Olhos</a>
+                    <a onclick="avisar()">Cuidados com <br> o rosto</a>
+
+                </div>
+            </li>
+            <li class="button-account">
+                <a href="marqueconsulta.html">MARQUE UMA CONSULTA</a> 
+            </li>            
+        </ul>
+    </nav>
+    <!--FIM DO NAV BAR -->
+    <main class="bodylinks">
+        <h1>
+            <center>
+                Rejuvenescimento das mãos com preenchedores cutâneos <br> à base de ácido hialurônico: eficácia, segurança e <br> satisfação dos pacientes durante seis meses.
+            </center>
+        </h1>
+        <h2>
+            <center>
+                RESUMO
+            </center>
+        </h2>
+        <p>
+            <b>Introdução:</b>  Os preenchedores à base de ácido hialurônico (AH) são considerados uma das opções de tratamento para rejuvenescimento das mãos. <br>
+            
+            <b>Objetivos:</b>  Avaliar a eficácia de preenchedores de AH em mulheres com perda de tecido adiposo e reabsorção dérmica como sinais de envelhecimento no dorso das mãos. <br>
+            
+            <b>Métodos:</b> Quinze participantes receberam tratamento com dois géis de AH mais firmes combinados com o gel mais fluido da mesma linha (grupo 1), e outras 15 com dois géis de AH mais firmes apenas (grupo 2). Avaliações de eficácia e segurança foram realizadas em um, três e seis meses. Questionários de satisfação e autoavaliação foram aplicados. <br>
+            
+            <b>Resultados:</b> A maioria das participantes apresentou fototipos (Fitzpatrick) III e IV, e a idade média foi de 56,6 anos. Seis meses após o tratamento, todas as participantes do grupo 1 e 93% do grupo 2 apresentaram melhora clínica; e 90% das participantes de ambos os grupos apresentaram melhora estética global. Dor leve foi relatada em ambos os grupos. Todos os eventos adversos foram leves ou moderados. <br>
+            
+            <b>Conclusões:</b> Ambos os tratamentos foram eficazes e seguros, e foi observada melhora por até seis meses após o tratamento. A maioria dos participantes referiu alta satisfação até o final do estudo. <br>
+            
+            <b>Palavras-chave: </b>  mãos; rejuvenescimento; ácido hialurônico; envelhecimento da pele
+        </p>
+        <dd>
+            Gostou? <a href="">Clique aqui</a> caso queira ler mais sobre o artigo, lembra de voltar aqui e deixar abaixo seu comentário, observações e dúvidas sobre sua leitura do artigo.
+        </dd>
+
+        <div class=" containerComentarios">
+            <form onsubmit="return false;">
+                <div class="dadosComentarios">
+                    <label>Nome completo: </label><br />
+                    <input type="text" id="nome" placeholder="Nome completo" /><br /><br />
+                    <label> Idade:</label>
+                    <input type="number" id="idade" placeholder="Idade" value="18" /><br /><br />
+                    <label> E-mail: </label><input type="email" id="email" placeholder="usuario@servidor.com" /><br /><br />
+                    <label> Profissão: </label>
+                    <input type="text" id="profissao" placeholder="Profissão" /><br /><br />
+                </div>
+                <div class="dadosComentarios">
+                    <div>
+                        <textarea type="text" id="comentario" name="" id="" cols="120" rows="5"></textarea>
+                    </div>
+                    <div class="divenviar"">
+                        <button onclick="dados();">Enviar</button>
+                    </div>
+                </div>
+                <label for="">Veja abaixo o que estão comentando: </label>
+                <hr>
+                <div id="result"></div>
+            </form>
+            <hr>
+
+        </div>
+
+
+    </main>
+        <!-- INÍCIO DO FOOTER-->
+
+        <footer class="rodape-karolllohanne bg-light">
+            <div class="container">
+                <div class="linha quadro-rodape">
+                    <div class="col-md-3 logo-rodape">
+                        <div class="texto3">
+                            <div class="textoferramenta">
+                                <p>
+                                    <img loading="lazy" class="alignnone wp-image-4657" src="BOLINHA BRANCA.png" alt width="218" height="218">
+                                </p>
+                                <br>
+                                <p>
+                                    Endereço: EQS 302/303 
+                                    <br> 
+                                    W3 sul 
+                                    <br> 
+                                    Asa Sul, Brasília-DF
+                                    <br>
+                                    CEP
+                                </p>
+                                <br>
+                                <hr style="background-color: #ffffff ">
+                                <br>
+                                <p style="font-weight: 400;">
+                                    SAC Institute KarollLohanne 
+                                    <br>
+                                    <a href="">institutekarolllohanne@gmail.com</a>
+    
+                                </p>
+                                <p>&nbsp;</p>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="custom-html-3">
+                            <h5 class="text-uppercase">Institucional</h5>
+                            <div>
+                                <ul class="tirar">
+                                    <li>
+                                        <a href="contatos.html">Agendamento OnLine</a>
+                                    </li>
+                                    <li>
+                                        <a href="sobre.html">Sobre a Dra. Karoll Lohanne Monteiro</a>
+                                    </li>
+                                    <li>
+                                        <a href="aclinica.html">A Clínica</a>
+                                    </li>
+                                    <li>
+                                        <a href="contatos.html">Contatos</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Agendamento OnLine</a>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="custom-html-4">
+                            <h5 class="text-uppercase">Tratamentos</h5>
+                            <div>
+                                <ul class="tirar">
+                                    <li><a href="trat_harm_facial.html">Harmonização facial</a></li>
+                                    <li><a href="trat_toxina.html">Toxina botulínica</a></li>
+                                    <li><a href="trat_bioestimulador.html">Bioestimulador colágeno</a></li>
+                                    <li><a href="trat_skinbooster.html"><i>Skinbooster</i></a></li>
+                                    <li><a href="trat_microagulhamento.html">Microagulhamento</a></li>
+                                    <li><a href="trat_peeling.html"><i>peeling</i> químico</a></li>
+                                    <li><a href="trat_capilar.html">Terapia capilar</a></li>
+                                    <li><a href="trat_limpezadepele.html">Limpeza de pele</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-0">
+                        <div class="row m-0">
+                            <div class="col-md-12">
+                                <div id="text-5">
+                                    <h5 class="text-uppercase">Telefones</h5>
+                                    <div class="text-widget">
+                                        <p>
+                                            <a href="">(61) 98594-5139&nbsp;</a> <br>
+                                            Capitais e Regiões metropolitanas
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <p>
+                                            <a href="">0800-xxx-xxxx </a><br>
+                                            Demais regiões
+                                        </p>
+                                        <div>
+                                            <a href="https://www.instagram.com/karoll.lohanne/"><img src="instagram-icone-icon-1.png" alt="" style="width: 50px; height: 50px;"></a>
+                                            <a href="https://www.facebook.com/karoll.lohannemonteiro"><img src="Facebook_icon_2013.svg.png" alt="" style="width: 50px; height: 50px;"></a>
+                                            <a href="https://api.whatsapp.com/send?phone=5561985945139"><img src="whatsapp-icone-2.png" alt="" style="width: 50px; height: 50px;"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div></div>
+                <a href=""></a>
+            </div>
+        </footer>
+
+    <script src="script.js"></script>
+
+ 
+</body>
+</html>

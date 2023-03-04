@@ -1,0 +1,818 @@
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    body, nav, .dropdown, .botaodropdown, .contemdropdown, div, main, .main-do-carrossel, .secaocarrossel, .carrossel_do_leo, .slideshow-container, .lado-div, .lado-do-carrossel, section, footer {
+      width: 100%;
+    }
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+}
+
+nav {
+    display: flex;
+    background-color:rgb(243, 18, 142);
+    height: 110px;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    position: fixed; /* fixou o navbar para aparecer fixo mesmo que eu desça a página*/
+    width: 100%;
+    z-index: 1000;
+    /*background-color:rgb(243, 139, 196);*/
+
+}
+
+nav img{
+    width: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 5px;
+    margin: 0 8px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+}
+
+nav ul li:last-child{
+    background-color: #f9c70c;
+    border-radius: 20px;
+}
+
+li a, .botaodropdown {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .botaodropdown {
+    background-color: #f1f1f1;
+    color: black;
+    min-width: 128px;
+}
+
+li.dropdown {
+    display: inline-block; /* faz aparecer para baixo*/
+}
+
+
+.contemdropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.contemdropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.contemdropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .contemdropdown {
+    display: block;
+}
+
+main {
+    padding-top: 100px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 520px;
+}
+
+/* SEÇÃO DO CARROSSEL */
+
+.main-do-carrossel{
+    background-color: #f7f7f7;
+    height: auto;
+    padding-top: 140px;
+}
+
+.secaocarrossel {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.lado-div {
+    background-color: #f7f7f7;
+    margin-left: 50px;
+    padding-bottom: 0px;
+}
+
+.lado-do-carrossel {
+    margin-right: 50px;
+    padding-top: 40px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    border-radius: 59px 59px 59px 10px;
+    background-color: #4183b2;
+    color: #f7f7f7;
+    font-size: x-large;
+    font-weight: bold;
+    width: 300px;
+    display: center;
+    justify-content: space-between;
+}
+
+.lado-do-carrossel div p{
+    text-align: center;
+    position: relative;
+}
+
+.div-do-div-do-lado {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    height: 28px;
+
+}
+
+
+
+.carrossel_do_leo {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    padding-top: 100px;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: #f7f7f7;
+    width: 600px;
+    height: 400px;
+
+}
+
+/* .carrossel_do_leo div p{
+    font-size: xx-large;
+    margin-left: 10px;
+    justify-items: left;
+    background-color: #0573CE;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #f7f7f7;
+    border-radius: 59px 59px 59px 10px;
+} */
+
+.karollretrato{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.mySlides {
+    display: none; }
+    img {
+    vertical-align: middle;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imgkaroll {
+    width: 900px;
+    height: 440px;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* FIM DA SEÇÃO DO CARROSSEL */
+
+
+
+.ex-main{
+    background-color: #0573CE;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-ex-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0px;
+    border-right: 0px;
+    margin-right: 0px;
+    max-width: fit-content;
+    max-height: fit-content;
+    
+}
+
+.container-main div{
+    max-width: 410px;
+    margin-right: 0px;
+    background-color: #0573CE;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-main div div{
+    justify-content: space-between;
+}
+
+.karollact{
+    width: 300px;
+    height: 438px;
+    padding: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mulherneon{
+    margin-left: 100px;
+    margin-right: 20px;
+    padding: auto;
+}
+
+.rounded-bottom-left-59-10 {
+    border-radius: 59px 59px 59px 10px;
+    margin-bottom: 10px;
+}
+
+.container-main img:last-child{
+    margin-right: -10px;
+}
+
+.container-main img {
+    display: block;
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+
+.container-main h4{
+    margin-bottom: 20px; /*fez o h4 descer e ficar abaixo das outras palavras*/
+    line-height: 2;/*fez separação entre linhas*/
+    font-weight: 200;/*fez a fonte ficar menos negrito  (bold) */
+    font-size: larger;
+}
+
+.button-account{
+    background-color: #f9c70c;
+    padding: 10px 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    /* os dois abaixo fez o mouse mudar de seta para mãozinha ao passar em cima do buton*/
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+
+.button-account a {
+    list-style: none;
+}
+
+.button-account:hover{
+    background-color: #c59a00;
+}
+
+.video-prop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    /*border-radius: 25px;
+    saiu daqui e foi pra baixo, no ifrm, classificando só o iframe*/
+}
+
+.ifrm{
+    border-radius: 25px;
+}
+
+.phrase{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.conheca {
+    display: flex;
+    position: relative;
+    height: 40px;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    border: #4c1455;
+    color: #f7f7f7;
+    /*color: #5f4763;*/
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #717171;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.sectioncards {
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+
+.sectioncards2 {
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+
+.container-cards{
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 20px 20px 20px;
+}
+
+.container-cards2{
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 20px 20px 20px;
+}
+
+.container-cards div a{
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0px;
+    max-width: 350px;
+    max-height: 350px;
+    /*background-color: #023b87;*/ /*retirado para o .container-cards div:first-child*/
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    padding: 35px 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+}
+
+.container-cards2 div a{
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0px;
+    max-width: 350px;
+    max-height: 350px;
+    /*background-color: #023b87;*/ /*retirado para o .container-cards div:first-child*/
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    padding: 35px 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+}
+
+.card-um{
+    background-color: #878f99;
+    margin-left: 100px;
+}
+
+.card-dois{
+    background-color: #ac96b3;
+}
+
+.card-tres{
+    background-color: rgb(212, 113, 236);
+    margin-right: 100px;
+}
+
+.card-borda{
+    border-radius: 59px 59px 59px 10px;
+}
+
+.card-borda a p{
+    text-decoration: none;
+} /* não deu certo de tirar a linha de baixo das palavras */
+
+.container-cards div a img{
+    width: 250px;
+    height: 250px;
+    border-radius: 59px 59px 59px 10px;
+    padding: 20px;
+}
+
+.container-cards2 div a img{
+    width: 250px;
+    height: 250px;
+    border-radius: 59px 59px 59px 10px;
+    padding: 20px;
+}
+
+.container-cards2 div{
+    width: 350px;
+    justify-content: space-around;
+}
+
+.container-cards div a p{
+    text-align: center;
+    margin: 30px 10px 10px 10px;
+}
+
+.container-cards div a h2{
+    margin-top: 20px;
+}
+
+.sectionvideos{
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 30px;
+}
+
+.div-videos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-video{
+    font-size: xx-large;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f7f7f7;
+    width: auto;
+    height: auto;
+}
+
+.avisovideos{
+    font-size: xx-large;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f7f7f7;
+    width: auto;
+    height: auto;
+    background-color: #6f0052;
+    margin-bottom: 20px;
+}
+
+.divcardvideos{
+    margin: 30px;
+    padding: 50px;
+}
+
+.divcardvideos div{
+    width: 290px;
+    height: 315px;
+}
+
+.divcardvideos div p{
+    padding: 30px;
+}
+
+.card-video p{
+    padding: 30px;
+}
+
+.container-account-2{
+    /*background-color: aqua;*/ /*cor retirada, estava apenas servindo de facilitador de visualização da div no site*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+
+}
+
+.button-account-2{
+    background-color: #4183b2;
+    padding: 10px 40px 10px 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease all;
+    width: 250px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Seção 2 dos links de artigos */
+/* INÍCIO */
+.section2links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.bodylinks {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    background-color: #f7f7f7;
+    width: fit-content;
+    padding: 120px 30px 30px 30px;
+}
+
+.containerComentarios {
+    margin: 20px;
+}
+
+.dadosComentarios {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    justify-content: space-between;
+}
+
+.divenviar {
+    margin-right: 200px;
+    margin-left: 0px;
+}
+
+.divenviar button {
+    width: 130px;
+    height: 50px;
+    font-size: x-large;
+    font-weight: bold;
+    /* os dois abaixo fez o mouse mudar de seta para mãozinha ao passar em cima do buton*/
+    cursor: pointer;
+    transition: 0.5s ease all;
+    
+}
+
+.divenviarcontato {
+    margin: 20px;
+    padding: auto;
+    padding-right: 50px;
+    position: relative;
+}
+
+/* FIM SEÇÃO 2 */
+
+.container-dashboard{
+    /*background-color: #023b87;*/ /*Anulado. Servia apenas para visualizar*/
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-dashboard img{
+    width: 300px;
+}
+
+.container-dashboard div img{
+    width: 150px;
+    height: 85px;
+
+}
+
+.alinharexemplos {
+    background-color: #f9c70c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.alinharexemplos div{
+    margin: auto;
+}
+
+.exemplo1 {
+    background-color: #023b87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exemplo2 {
+    background-color: #05ce16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exemplo3 {
+    background-color: #4183b2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    border-radius: 59px 59px 59px 10px;
+    height: 50px;
+    color: #f7f7f7;
+    font-size: larger;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+}
+
+/* SEÇÃO FOOTER */
+
+footer {
+    display: flex;
+    max-height: auto;
+}
+
+footer div ul li a{ 
+    text-decoration: none;
+}
+
+footer .textoferramenta p a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+footer .text-widget p a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+.rodape-karolllohanne {
+    font-size: 16px;
+    font-weight: 300;
+    background: linear-gradient(to right, #4c1455 14%, #6f0052 90%);
+    color: white;
+}
+
+.bg-light {
+    background-color: #f8f9fa!important;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.linha {
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-between;
+}
+
+/* .botaodropdown {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+} */
+
+.logo-rodape {
+    padding-top: 0px;
+    padding-bottom: 7%;
+}
+
+.text-uppercase {
+    text-transform: uppercase!important;
+    font-weight: bold;
+    font-size: large;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: block;
+
+}
+
+.tirar {
+    list-style: none;
+    padding-left: 0;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+
+}
+
+.tirar li{
+    box-sizing: border-box;
+    padding: 0%;
+}
+
+.texto3 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.divpaginas {
+    margin: 50px;
+    /*
+    justify-items: center;
+    align-items: center;
+    */
+    margin-left: 150px;
+}
+
+.h1sobre {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mainsobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainclinica {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-right: 20px;
+}
+
+.secaoindex {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+
+}
